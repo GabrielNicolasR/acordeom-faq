@@ -1,0 +1,82 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    background-color: #e5e5e5;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.acordeon {
+    display: flex;
+    box-shadow: 0 27px 49px -25px rgba(0, 0, 0, 0.3);
+    position: relative;
+    width: 655px;
+    min-height: 347px;
+    background-color: #fcfcfc;
+    border-radius: 21px;
+    padding: 20px 5px 20px 5px;
+    align-items: center;
+}
+
+.acordeon img {
+    position: absolute;
+    right: 71%;
+}
+
+.acordeon .conteudo {
+    display: flex;
+    flex-direction: column;
+    padding-left: 225px;
+}
+
+.acordeon .conteudo h1 {
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.acordeon .conteudo .items .item {
+    border-bottom: solid 1px #d4d4d4;
+    background-image: url(../image/seta.png);
+    background-repeat: no-repeat;
+    background-position: top 8px right 15px;
+    background-size: 15px;
+    margin: 10px 0;
+    padding-right: 50px;
+    cursor: pointer;
+}
+
+.acordeon .conteudo .items .item:last-child {
+    border-bottom: none;
+}
+
+.acordeon .conteudo .items .item .pergunta {
+    font-size: 17px;
+    font-weight: 500;  
+    margin: 10px 0 10px 0;
+    transition: 0.3s;
+}
+
+.resposta {
+    display: none;
+    margin: 10px 0 10px 0;
+}
+
+.acordeon .items .item.ativo .resposta {
+    display: block;
+}
+
+.acordeon .conteudo .items .pergunta:hover {
+    color: #f14624;
+}
+
+.acordeon .items .item.ativo {
+    background-image: url(../image/seta\ aberta.png);
+}

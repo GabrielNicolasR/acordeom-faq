@@ -1,0 +1,24 @@
+@media (max-width: 768px) { 
+    .acordeon {
+        width: 350px;
+        min-height: 200px;
+    }
+
+    .acordeon img {
+        bottom: 75%;
+        left: 100px;
+        width: 150px;
+    }
+
+    .acordeon .conteudo {
+        padding-left: 0;
+    }
+
+    .acordeon .conteudo .items .item .pergunta {
+        font-size: 15px;
+    }
+
+    .acordeon .conteudo .items .item .resposta {
+        font-size: 14px;
+    }
+ } 
