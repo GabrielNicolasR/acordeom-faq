@@ -1,14 +1,14 @@
-const itensPerguntasERespostas = document.querySelectorAll(".item");
+const selecionarPergunta = document.querySelectorAll(".item")
 
-itensPerguntasERespostas.forEach(function (item) {
-    item.addEventListener("click", function () {
-        const contemAtivo = document.querySelector(".ativo");
+selecionarPergunta.forEach(pergunta => {
+   pergunta.addEventListener("click", () => {
+        const selecionarAtivo = document.querySelector(".ativo")
+        selecionarAtivo.classList.remove("ativo")
 
-        if (contemAtivo) {
-            contemAtivo.classList.remove("ativo");
-        }
-
-        item.classList.add("ativo");
-    })
+        pergunta.classList.add("ativo")
+   })
 })
+
+
+
 

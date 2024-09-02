@@ -1,82 +1,82 @@
 body {
-    font-family: "Roboto", sans-serif;
-}
-
-html {
     background-color: #e5e5e5;
+    font-family: roboto;
 }
 
-main {
+hr {
+    margin-top: 15px;
+    opacity: 0.5;    
+    width: 95%;
+}
+
+hr:last-child {
+    border: none;
+}
+
+.faq {
+    height: 100vh;
+    width: 100lvw;
+}
+
+.faq .duvidas {
+    height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    min-height: 100vh;
-}
-
-.acordeon {
-    display: flex;
-    box-shadow: 0 27px 49px -25px rgba(0, 0, 0, 0.3);
-    position: relative;
-    width: 655px;
-    min-height: 347px;
-    background-color: #fcfcfc;
-    border-radius: 21px;
-    padding: 20px 5px 20px 5px;
     align-items: center;
+    position: relative;
 }
 
-.acordeon img {
+.faq .homem-azul {
     position: absolute;
-    right: 71%;
+    padding: 14.5% 0 0 20%;
+    z-index: 1;
 }
 
-.acordeon .conteudo {
+.item .pergunta:hover {
+    color: #f47c57;
+}
+
+.faq .duvidas .lista-de-perguntas {
+    background-color: #ffff;
+    width: 655px;
+    height: 347px;
+    border-radius: 21px;
     display: flex;
     flex-direction: column;
-    padding-left: 225px;
+    padding-left: 12%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
 }
 
-.acordeon .conteudo h1 {
+.faq .duvidas .lista-de-perguntas .titulo {
+    font-size: 25px;    
     font-weight: 700;
-    line-height: 30px;
-    margin-bottom: 10px;
 }
 
-.acordeon .conteudo .items .item {
-    border-bottom: solid 1px #d4d4d4;
-    background-image: url(../image/seta.png);
-    background-repeat: no-repeat;
-    background-position: top 8px right 15px;
-    background-size: 15px;
-    margin: 10px 0;
-    padding-right: 50px;
-    cursor: pointer;
-}
-
-.acordeon .conteudo .items .item:last-child {
-    border-bottom: none;
-}
-
-.acordeon .conteudo .items .item .pergunta {
+.faq .duvidas .lista-de-perguntas .item .pergunta {
     font-size: 17px;
-    font-weight: 500;  
-    margin: 10px 0 10px 0;
-    transition: 0.3s;
+    font-weight: 500;
+    background-image: url(../image/seta\ fechada.png);
+    background-repeat: no-repeat;
+    background-position: 90%;
+    margin: 10px 0 5px 0;
+    cursor: pointer;
 }
 
 .resposta {
     display: none;
-    margin: 10px 0 10px 0;
+    font-size: 15px;
+    width: 90%;
 }
 
-.acordeon .items .item.ativo .resposta {
+.faq .duvidas .lista-de-perguntas .item.ativo .resposta{
     display: block;
 }
 
-.acordeon .conteudo .items .pergunta:hover {
-    color: #f14624;
-}
-
-.acordeon .items .item.ativo {
+.faq .duvidas .lista-de-perguntas .item.ativo .pergunta {
     background-image: url(../image/seta\ aberta.png);
 }
+
+
+

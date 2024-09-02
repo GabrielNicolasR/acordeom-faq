@@ -1,48 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/resposive.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"rel="stylesheet">
-    <title>Acordeon</title>
+    <title>Faq</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <main>
-        <section class="acordeon">
-            <img src="src/image/imagem.png" alt="">
+    <section class="faq">
+        <img src="src/image/imagem.png" alt="homem azul" class="homem-azul">
+        <div class="duvidas">
+            <ul class="lista-de-perguntas">
+                <h1 class="titulo">FAQ</h1>
+                <li class="item ativo">
+                    <h2 class="pergunta">O que significa "NaN" em JavaScript?</h2>
 
-            <div class="conteudo">
-                <h1>FAQ</h1>
-                <ul class="items">
-                    <li class="item ativo">
-                        <h2 class="pergunta">O que é JavaScript?
-                        </h2>
+                    <p class="resposta">
+                        NaN" significa "Not a Number" e é retornado quando uma operação aritmética resulta em algo que
+                        não é um número, como tentar multiplicar uma string por um número.
+                    </p>
+                </li>
+                <hr>
+                <li class="item">
+                    <h2 class="pergunta">O que o método map() faz em um array?</h2>
 
-                        <p class="resposta">JavaScript é uma linguagem de programação usada para criar interatividade em páginas da web e aplicativos.</p>
-                    </li>
-                    <li class="item">
-                        <h2 class="pergunta">Qual a diferença entre JavaScript, HTML e CSS?</h2>
+                    <p class="resposta">
+                        Cria um novo array aplicando uma função a cada elemento.
+                    </p>
+                </li>
+                <hr>
+                <li class="item">
+                    <h2 class="pergunta">Qual a diferença entre let e var?</h2>
 
-                        <p class="resposta ativo">HTML cria a estrutura, CSS estiliza e JavaScript adiciona interatividade e comportamento dinâmico.</p>
-                    </li>
-                    <li class="item">
-                        <h2 class="pergunta">
-                            Quais são algumas características principais do JavaScript?
-                        </h2>
-                        
-                        <p class="resposta">Tipagem dinâmica, fácil manipulação do DOM, funções de primeira classe e suporte a operações assíncronas, além de um ecossistema robusto de bibliotecas e frameworks.</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </main>
+                    <p class="resposta">
+                        let tem escopo de bloco, var tem escopo de função.
+                    </p>
+                </li>
+                <hr>
+            </ul>
+        </div>
+    </section>
 
-    <script src="src/js/index.js"></script>
+
+    <script src="./src/js/index.js"></script>
 </body>
 
 </html>
