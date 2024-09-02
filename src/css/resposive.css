@@ -1,24 +1,26 @@
 @media (max-width: 768px) { 
-    .acordeon {
-        width: 350px;
+    .faq {
+        padding: 5px;
         min-height: 200px;
     }
 
-    .acordeon img {
-        bottom: 75%;
-        left: 100px;
-        width: 150px;
+    .faq .homem-azul {
+        margin-top: 16%;
+        margin-left: 10%;
+        width: 220px;
     }
 
-    .acordeon .conteudo {
-        padding-left: 0;
+    .faq .duvidas .lista-de-perguntas .titulo {
+        font-size: 20px;
     }
 
-    .acordeon .conteudo .items .item .pergunta {
-        font-size: 15px;
-    }
-
-    .acordeon .conteudo .items .item .resposta {
+    .faq .duvidas .lista-de-perguntas .item .pergunta {
         font-size: 14px;
     }
+
+    .faq .duvidas .lista-de-perguntas .item .resposta {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
  } 
